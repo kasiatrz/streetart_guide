@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <meta name="description"
+            content="Street art guide. Art is everywhere...Great guide for street art lovers. Find out yourself!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="assets/favi.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <title>Street Art Guide | London and Lodz</title>
+</head>
+
+<body id="homepage" onload=set_time()>
+    <nav>  
+        <!-- wrapper for all navigation -->
+        <div>
+            <!-- logo -->
+            <a href="#"><img src="assets/logo.svg" alt="logo"></a>
+            <!-- architectural squares -->
+            <div class="squares">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- wrapper for menu & search box -->
+            <div class="nav_background">
+                <!-- hamburger -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- navigation list -->
+                <ul>
+                    <li><span>Artists</span></li>
+                    <li><a href="#"><span>Works</span></a></li>
+                    <li><a href="#"><span>Maps</span></a></li>
+                </ul>
+                <!-- search box -->
+                <div class="box">
+                    <form class="search" method="get" action="#">
+                        <div class="container-1">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <!--END wrapper for all navigation -->
+    </nav> 
+    
+    <main>
+        <!-- main heading -->
+        <div class="heading">
+            <h1>streetart.guide<br/>
+            <span>art is everywhere...</span></h1>
+        </div>
+        <!-- city panorama_sprite -->
+        <img class="panorama" id="img_change" src="assets/01.svg" alt="">
+        <!-- ABOUT US -->
+        <div class="about">
+            <div class="text">
+                <h2>About us</h2>
+                <p>Hello,<br/>
+                We are Street Art Guide. We want you to the see street art as we do.
+                Museums and galleries are not the only places
+                where you can find art...
+                <br/><br/>
+                Just go outside and look around!
+                <br/><br/><br/><br/>
+                <!-- send us your photo_text -->
+                We would be also incredabily happy if you share your
+                street art experience with  us. Do you have your favourite
+                artists? Or mayby you have some amazing pics?
+                <br/><br/>
+                Don’t hesitate anymore and contact us!
+                </p>
+                <!-- send us your photo_button -->
+                <button type="button">send us your photo</button>
+            </div>
+            <img src="assets/homepage_stik.svg" alt="stik_img">
+        </div>
+        <!-- END ABOUT US -->
+        
+        <!-- NEW WORKS -->        
+        <h2 class="works_head">New works</h2>
+        <p><a href="#">view all &gt;&gt;</a></p>
+        <div class="works">
+             <!-- work_01 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_aryz.jpg" alt="aryz">
+                <div>
+                    <h2>Stik</h2>
+                    <h3>Shoreditch</h3>
+                </div>
+                </a>
+            </div>
+            
+            <!-- work_02 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_barys.jpg" alt="barys">
+                <div>
+                    <h2>ROA</h2>
+                    <h3>Camden Twon</h3>
+                </div>
+                </a>
+            </div>
+            <!-- work_03 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_etam.jpg" alt="etam">
+                <div>
+                    <h2>Christain Nagel</h2>
+                    <h3>Shoreditch</h3>
+                </div>
+                </a>
+            </div>
+        </div>
+        <!-- END NEW WORKS -->
+        
+        <!--NEW ARTISTS -->
+        <div class="artists_back">
+         <h2 class="artists_head">New artists</h2>
+            <p><a href="#">view all &gt;&gt;</a></p>
+        <div class="artists">  
+            <!-- artist_01 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_etam.jpg" alt="gregor">
+                <div>
+                    <h2>Christain Nagel</h2>
+                </div>
+                </a>
+            </div>
+             <!-- artist_02 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_etam.jpg" alt="etam">
+                <div>
+                    <h2>Ola Antoniak</h2>
+                </div>
+                </a>
+            </div>
+             <!-- artist_03 -->
+            <div>
+                <a href="#">
+                <img src="assets/works/thumbnail_barys.jpg" alt="barys">
+                <div>
+                    <h2>Ula Gajowa</h2>
+                </div>
+                </a>
+            </div>
+        </div>
+        </div>
+        <!-- END ARTISTS -->
+    </main>
+  
+    <footer>
+         <!-- architectural squares -->
+        <div class="squares">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <ul>
+            <li>Artists</li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Maps</a></li>
+        </ul>
+        <p>Follow us: <a href="#" target="_blank"> <i class="fa fa-instagram"></i></a></p>
+        <p>streetart.guide&copy;2018</p>
+    </footer>
+    
+<!-- JS -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<!-- hamburger -->
+<script src="js/hamburger.js"></script>
+<script src="js/panorama.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <meta name="description"
+            content="Street art guide. Discover best street art cities. Maps for London and Lodz!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="assets/favi.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- css for single_works slider -->
+    <link rel="stylesheet" href="js/slick_slider/slippry.css" />
+    <title>Street Art Guide | Street Art maps</title>
+</head>
+
+<body id="single_maps">
+    <nav>  
+        <!-- wrapper for all navigation -->
+        <div>
+            <!-- logo -->
+            <a href="#"><img src="assets/logo.svg" alt="logo"></a>
+            <!-- architectural squares -->
+            <div class="squares">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- wrapper for menu & search box -->
+            <div class="nav_background">
+                <!-- hamburger -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- navigation list -->
+                <ul>
+                    <li><a href="#"><span>Artists</span></a></li>
+                    <li><span>Works</span></li>
+                    <li><a href="#"><span>Maps</span></a></li>
+                </ul>
+                <!-- search box -->
+                <div class="box">
+                    <form class="search" method="get" action="#">
+                        <div class="container-1">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <!--END wrapper for all navigation -->
+        </div>
+    </nav> 
+    
+
+    <main>
+        <!-- breadcrumb nav -->
+        <div class="breadcrumbs">                
+            <a href="#">Home</a>
+            <span>&gt;&gt;</span>
+            <a href="#">Maps</a>
+            <span>&gt;&gt;</span>
+            <span>London</span>
+        </div>
+        <!-- END breadcrumb nav -->
+        <!-- google map-->
+        <div id="map-canvas"></div>
+        <!-- END google map-->
+        <h1>London</h1>
+        <!-- checkboxes -->
+        <div id="buttons">
+        <div>
+          <input type="checkbox" name="filter" value="stik" class='chk-btn' onclick="selectAllChecked();">
+          <label>Stik</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" value="jimmy_c" class='chk-btn' onclick="selectAllChecked();">
+          <label>Jimmy C</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" value="roa" class='chk-btn' onclick="selectAllChecked();">
+          <label>Roa</label>
+        </div>
+        <div>
+          <input type="checkbox" name="filter" value="roa" class='chk-btn' onclick="selectAllChecked();">
+          <label>Christain Nagel</label>
+        </div>
+        </div>
+    </main>
+  
+    <footer>
+         <!-- architectural squares -->
+        <div class="squares">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <ul>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Maps</a></li>
+        </ul>
+        <p>Follow us:<a href="#" target="_blank"> <i class="fa fa-instagram"></i></a></p>
+        <p>streetart.guide&copy;2018</p>
+    </footer>
+    
+<!-- JS -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<!-- hamburger -->
+<script src="js/hamburger.js"></script>
+<!-- works_slider -->
+<script src="js/slick_slider/slippry.min.js"></script>
+<script src="js/slick_slider/slider_custom.js" ></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUIhwFrGe85EHPlmm5fzHe_ZXX-QZQN8I&callback=myMap"></script>
+<!-- filter code MAGIC -->
+<script src="js/google_map.js"></script>
+
+    </body>
+</html>

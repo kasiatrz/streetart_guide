@@ -1,0 +1,1824 @@
+/*GENERAL*/
+*{
+    font-family: "Lato","Futura", "Helvetica", "Arial", "Verdana",sans-serif;
+    font-size: 62.5%;
+    color: #384655;
+    box-sizing:border-box;
+}
+a{
+    font-family: "Lato","Futura", "Helvetica", "Arial", "Verdana",sans-serif;
+    text-decoration: none;
+}
+/*END GENERAL*/
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/*******NAVIGATION*******/
+nav>div{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #384654;
+}
+/*logo*/
+nav  a>img{
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    width: 80px;
+    height: auto;
+    z-index: 9999999;
+}
+/*architectural_squares*/
+.squares div{
+    position: absolute;
+    background-color: #FFF;
+    z-index: 9999999;
+}
+.squares div:nth-child(1){
+    width: 15px;
+    height: 6px;
+    bottom: 0px;
+    left: 40px;
+}
+.squares div:nth-child(2){
+    width: 15px;
+    height: 12px;
+    bottom: 0px;
+    left: 52px;
+}
+.squares div:nth-child(3){
+    width: 15px;
+    height: 6px;
+    bottom: 0px;
+    left: 67px;
+}
+.squares div:nth-child(4){
+    width: 15px;
+    height: 6px;
+    bottom: 0px;
+    left: 87px;
+}
+/*END architectural_squares*/
+.nav_background{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    background-color: #76828D;
+}
+/*hamburger*/
+.hamburger{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+nav .hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #FFF;
+}
+/*search box*/
+.box{
+    display: none;
+}
+.container-1{
+    float: right; 
+    position: relative; 
+}
+.container-1 input#search{
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    padding-left: 45px;
+    margin-right: 100px;
+    background: #FFF;
+    opacity: 0.5;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #384654;
+}
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 17px;
+    z-index: 1;
+    color: #384654;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    opacity: 1;
+  }
+/* navigation list */
+nav ul{
+    display: none;
+    position: absolute;
+    top:40px; 
+    width: 100%;
+    height: 150px;
+    background-color: #FFF;
+    z-index: 999999999;
+}
+
+nav li{
+    font-family: "Lato","Futura", "Helvetica", "Arial", "Verdana",sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 25px 0 0 0px;
+    font-weight: normal;
+}
+nav li a:hover, nav li a:active, nav li a:focus{
+    opacity: 0.5;
+}
+.current-menu-item a:link, .current-menu-item a:visited {
+    font-weight: bold;
+}
+.current-menu-item a:hover, .current-menu-item a:active, .current-menu-item a:focus{
+    opacity: 1;
+}
+/*******END NAVIGATION*******/
+
+/*******HOMEPAGE*******/
+/*main*/
+/*main heading*/
+.heading{
+    width: 80%;
+    margin: 0 auto 50px auto;
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 25px;
+}
+h1 span{
+    font-size: 0.7em;
+}
+/*panorama*/
+.panorama{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*about*/
+.about{
+    margin-top: -10px;
+    padding-bottom:  70px;
+    background-color: #394755; 
+}
+.about h2{
+    font-size: 2em;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: #FFF;
+}
+.about p{
+    font-size: 1.6em;
+    line-height: 1.4em;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: #FFF;
+}
+/*button*/
+.about button {
+    font-size: 1.6em;
+    display: block;
+    width: 80%;
+    height: 70px;
+    margin: 60px auto 0 auto;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.about button:hover, .about button:active, .about button:focus {
+    background-color: #394755;
+    color: #FFF;
+}
+/*stik image*/
+.about img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 60px auto 0 auto;    
+}
+/*END about**/
+
+/*new works*/
+.works_head{
+    font-size: 2em;
+    float: left;
+    font-weight: bold;
+    width: 40%;
+    margin: 30px 0 30px 10%;
+}
+.works_head+p{
+    font-size: 1.7em;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10%;
+}
+.works_head+p:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid #384655;
+}
+.works>div {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+}
+.works div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.works div div{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color:  #394755;
+}
+.works h2{
+    font-size: 2.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 16px;
+    color: #FFF;
+}
+.works h3{
+    font-size: 1.8em;
+    margin-left: 15px;
+    padding-top: 5px;
+    color: #FFF;
+}
+/*hover*/
+.works>div:hover, .works>div:active, .works>div:focus {
+    opacity: 0.8;
+}
+.works>div:link, .works>div:visited{
+    opacity: 1;
+}
+/*END new works*/
+
+/*new artists*/
+.artists_head{
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    width: 40%;
+    margin:  30px 0 30px 10%;
+    color: #394755;
+}
+.artists_head+p{
+    font-size: 1.7em;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10%;
+}
+.artists_head+p:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid #384655;
+}
+.artists div {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+}
+.artists_back{
+    margin-top: 40px;
+    padding-bottom: 50px;
+    background-color: #DDE2E7;
+}
+.artists div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.artists div:nth-child(1) img{
+    margin-top: 30px;
+}
+.artists div div{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color:  #394755;
+}
+.artists  div h2{
+    font-size: 2.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 16px;
+    color: #FFF;
+}
+/*hover*/
+.artists>div:hover, .artists>div:active, .artists>div:focus{
+    opacity: 0.8;
+}
+artists>div:link, .artists>div:visited{
+    opacity: 1;
+}
+/*END ne wrtists**/
+/*******END HOMEPAGE*******/
+
+/*******ARCHIVE ARTISTS*******/
+/*pagination*/
+.pagination{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+.pagination ul li{
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 7px 0 7px;
+}
+.pagination ul li a:link, .pagination ul li a:visited {
+    font-weight: normal;
+}
+.pagination ul li a:hover, .pagination ul li a:active, .pagination ul li a:focus{
+    opacity: 0.7;
+}
+/*******END ARCHIVE ARTISTS*******/
+
+/*******SINGLE ARTISTS*******/
+/*breadcrumbs*/
+.breadcrumbs{
+    font-family: "Lato";
+    font-size: 1.7em;
+    width: 250px;
+    margin: 10px 0 0 40px;
+}
+.breadcrumbs a:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid #384655;
+}
+.breadcrumbs span:nth-child(2){
+   font-size: 0.8em;
+}
+.breadcrumbs span:nth-child(4){
+   font-size: 0.8em;
+}
+/*illustration*/
+.illustration{
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+/*text*/
+.text_single{
+    width: 80%;
+    margin: 0 auto;
+}
+#single_artists .text_single h1{
+    margin-top: 0px;
+}
+#single_artists .text_single p:nth-child(2){
+    font-size: 1.6em;
+    line-height: 1.5em;
+    margin: 10px 0 30px 0;
+}
+#single_artists .text_single p:nth-child(3){
+    font-size: 1.6em;
+    float: left;
+    width: 180px;
+    margin: 40px 0 40px 0;
+}
+#single_artists .text_single p a:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid #384655;
+}
+#single_artists .text_single p:nth-child(4){
+    font-size: 1.6em;
+    float: right;
+    width: 120px;
+    font-weight: bold;
+    margin: 40px 0 40px 0;
+}
+#single_artists .artists_back{
+    clear: both;
+}
+/*******END SINGLE ARTISTS*******/
+
+/*******UPLOAD IMAGE PAGE*******/
+#upload-image{
+    width: 100%;
+    height: 90vh;
+}
+#upload-image span.file_title_clean{
+    display: block;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #384655;
+    margin: 40px 0 40px 0px;
+}
+tr{
+    display: block;
+    margin-left: 40px;
+    font-size: 1.8em;
+}
+#upload-image p    {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    width: 80%;
+    display: block;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+/*******END UPLOAD IMAGE PAGE*******/
+
+/*******WORKS ARCHIVE*******/
+#works .works_head{
+    width: 300px;
+}
+#filter{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+#filter:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/*filter toggle list*/
+#works .filter_toggle{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 0px 0px 10px 10%;
+    margin: 0;
+    z-index: 99999999999;
+}
+/* SEARCH & FILTER PLUGIN */
+.searchandfilter h4{
+    font-size: 2em;
+    font-weight: bold;
+}
+.searchandfilter ul li li{
+    font-size: 1.7em;
+    line-height: 1.2em;
+    font-weight: bold;
+    padding: 0px;
+    margin: 10px 0;
+}
+.searchandfilter .sf-field-taxonomy-artists ul li{
+    font-weight: normal;
+}
+.searchandfilter ul li ul li ul{
+    margin-left: 0;
+    font-size: 0.6em;
+}
+.searchandfilter ul li ul li ul li{
+    font-weight: normal;
+}
+.searchandfilter input[type=submit]{
+    font-size: 1.6em;
+    color: #FFF;
+    background-color: #394755;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+/* END SEARCH & FILTER PLUGIN */
+/*******END WORKS ARCHIVE*******/
+
+/*******SINGLE WORKS*******/
+
+#single_works .text_content{
+    display: block;
+    width: 80%;
+    margin: 0px auto 0 auto;
+    padding-top: 30px;
+}
+#single_works .text_content h1{
+    font-size: 3.5em;
+    line-height: 1.2em;
+}
+#single_works .text_content h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+}
+#single_works .text_content p:nth-child(3){
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+#single_works .text_content p:nth-child(4){
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#single_works .text_content p:nth-child(5){
+    margin-top: 40px;
+    font-size: 1.6em;
+}
+#single_works .text_content p a:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid #384655;
+}
+/* button */
+#single_works .text_content button{
+    font-size: 1.6em;
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin: 40px auto 0 auto;
+    border: 0;
+    background-color: #394755;
+    color: #FFF;
+    cursor: pointer;
+}
+#single_works .text_content button:hover, #single_works .text_contentbutton:active, #single_works .text_contentbutton:focus {
+    opacity: 0.8;
+}
+/* comments */
+#single_works .comments h2{
+    font-size: 2em;
+    font-weight: bold;
+    width: 80%;
+    display: block;
+    margin: 40px auto 0px auto;
+}
+#single_works .comments .comments-list{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+#single_works .comments .comments-list .comment{
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    background-color: #E8E9EA;
+}
+#single_works .comments .comments-list .comment h3{
+    background-color: #384654;
+    padding: 10px 30px;
+    color: #FFF;
+}
+#single_works .comments .comments-list .comment p{
+    padding: 10px 30px;
+    line-height: 1.5em;
+}
+/* comments nav*/
+#single_works .comments-list{
+    display: block;
+    width: 100%;
+    margin: -15px auto 0 auto;
+}
+#single_works .comments-list a{
+    font-size: 1.7em;
+}
+#single_works .comments-list a:hover{
+    opacity: 0.7;
+}
+#single_works .comments-list a:first-child{
+    float: left;
+}
+#single_works .comments-list a:last-child{
+    float: right;
+}
+/* END comments nav */
+/* respond */
+#single_works  #respond{
+    overflow: hidden;
+    clear: both;
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto 50px auto;
+}
+#single_works  #respond h3{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+#single_works  #respond #author{
+    font-size: 1.7em;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+#single_works  #respond textarea{
+    font-size: 1.7em;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    height: 100px;
+}
+
+#single_works  #respond .form-submit input{
+    font-size: 1.7em;
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin: 25px auto 0 auto;
+    border: 0px;
+    color: #FFF;
+    background-color: #384654;
+}
+/* hide wordpress text for respons*/
+#respond .comment-notes{
+    display: none;
+}
+#respond label{
+    display: none;
+}
+#respond .comment-form-cookies-consent{
+    display: none;
+}
+/* END respond */
+/* END comments */
+/*******END SINGLE WORKS*******/
+
+/******* SINGLE MAP *******/
+#single_maps h1{
+    margin: 0;
+    width: 80%;
+    margin: 30px auto 30px auto;
+}
+#wpgmza_filter_1{
+    display: none;
+}
+.wpgmza_map{
+    height: 300px!important;
+}
+#maps{
+    margin-bottom: 50px;
+}
+/* This is margin to see map-category filter */
+#maps_footer footer{
+    margin-top: 50px;
+}
+
+#single_maps ul li{
+    display: inline-block;
+    font-size: 2em;
+    width: 50%;
+}
+.wpgmza_filter_container{
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    float: none!important;
+}
+.wpgmza_cat_checkbox_holder{
+    padding: 0!important;
+    height: auto!important;
+}
+.wpgmza_cat_checkbox_holder ul:first-child{
+    line-height: 30px;
+}
+/*MAP LODZ */
+#wpgmza_filter_2{
+    display: none;
+}
+/******* END SINGLE MAP *******/
+
+
+/*******FOOTER*******/
+footer{
+    font-size: 1em;
+    font-family: "Lato";
+    position: relative;
+    width: 100%;
+    background-color: #384654;
+}
+footer ul{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #FFF;
+}
+footer ul li{
+    display: inline-block;
+    margin: 15px 50px 15px 0;
+}
+footer ul li a:link, footer ul li a:visited{
+    font-weight: normal;
+    color: #FFF;
+}
+footer ul li a:hover, footer ul li a:active, footer ul li a:focus{
+    opacity: 0.7;
+}
+footer ul li {
+    font-weight: bold;
+    color: #FFF;
+}
+
+footer .fa{
+    font-size: 1.7em;
+    color: #FFF;
+    margin-left: 25px;
+}
+footer .fa:hover{
+    opacity: 0.7;
+}
+footer p:nth-child(3){
+    width: 80%;
+    display: block;
+    margin: 15px auto 0 auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+}
+footer p:nth-child(4){
+    width: 80%;
+    display: block;
+    margin: 15px auto 0 auto;
+    padding-bottom: 15px;
+    color: #FFF;
+}
+/*architectural_squares*/
+footer .squares div{
+    position: absolute;
+    background-color: #FFF;
+    z-index: 9999999;
+}
+footer .squares div:nth-child(1){
+    width: 15px;
+    height: 6px;
+    bottom: auto;
+    left: 40px;
+    top: -6px;
+}
+footer .squares div:nth-child(2){
+    width: 15px;
+    height: 12px;
+    bottom: auto;
+    left: 52px;
+    top: -12px;
+}
+footer .squares div:nth-child(3){
+    width: 15px;
+    height: 10px;
+    bottom: auto;
+    left: 67px;
+    top: -10px;
+}
+footer .squares div:nth-child(4){
+    width: 15px;
+    height: 6px;
+    bottom: auto;
+    left: 82px;
+    top: -6px;
+}
+#maps footer{
+    margin-top: 50px;
+}
+/*END architectural_squares*/
+/*******END FOOTER*******/
+
+/******* 404 *******/
+#error{
+    width: 80%;
+    margin: 0 auto;
+}
+#error h1{
+   margin-top: 60px;
+}
+#error img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 60px auto 60px auto;    
+}
+#error h2{
+    font-size: 2em;
+    margin-top: 20px;
+}
+#error p{
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin-top: 20px;
+}
+/******* END 404 *******/
+
+
+
+
+
+
+/*******MEDIA QUERIES*******/
+
+/*710-1100*/
+@media screen and (max-width: 1100px) and (min-width: 710px){
+/*******NAVIGATION*******/
+nav>div{
+    height: 140px;
+}
+/*logo*/
+nav  a>img{
+    left: 50px;
+    width: 120px;
+}
+/*architectural_squares*/
+.squares div:nth-child(1){
+    width: 20px;
+    height: 10px;
+    left: 50px;
+}
+.squares div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 70px;
+}
+.squares div:nth-child(3){
+    width: 20px;
+    height: 15px;
+    left: 90px;
+}
+.squares div:nth-child(4){
+    width: 20px;
+    height: 10px;
+    left: 120px;
+}
+/*END architectural_squares*/
+.nav_background{
+    height: 50px;
+}
+/*hamburger*/
+.hamburger{
+    right: 50px;
+}
+/* navigation list */
+nav ul{
+    top:50px; 
+    height: 210px;
+}
+nav li{
+    font-size: 1.5em; 
+    margin: 35px 0 0 0px;
+}
+  
+/*******END NAVIGATION*******/
+    
+/*******HOMEPAGE*******/
+/*main*/
+/*main heading*/
+.heading{
+    width: 400px;
+    margin: 0 0 70px 100px;
+}
+h1{
+    font-size: 5em;
+    line-height: 0.8em;
+    margin-top: 110px;
+}
+h1 span{
+    font-size:0.5em;
+    
+}
+/*about*/
+.about{
+    position: relative;
+}
+.about h2{
+    font-size: 3em;
+    width: 40%;
+    margin: 0 0 0 50px;
+    padding-top: 50px;
+}
+.about p{
+    width: 40%;
+    margin: 0 0 0 50px ;
+    padding-top: 40px;
+}
+/*button*/
+.about button{
+    width: 40%;
+    margin: 60px 0 0 50px;
+}
+
+/*stik image*/
+.about img{
+    position: absolute;
+    width: 40%;
+    margin: 0px 0px 0 0;
+    top: 20%;
+    right: 50px;
+    }
+/*END about*/
+
+/*new works*/
+.works_head{
+    font-size: 3em;
+    margin: 30px 0 30px 5%;
+}
+.works_head+p{
+    margin-top: 45px;
+    margin-right: 7%;
+}
+.works{
+    overflow: hidden;
+    width: 90%; 
+    margin: 0 auto;
+}
+.works div {
+    clear: none;
+    float: left;
+    width: 32%;
+}
+.works div div{
+    height: 70px;
+}
+.works h2{
+    font-size: 2.4em;
+    padding-top: 12px;
+}
+.works h3{
+    font-size: 1.7em;
+    padding-top: 5px;
+}
+.works>div:nth-child(2) {
+    margin: 0 2% 0 2%;
+}
+.works a img{
+    margin-top: 0px;
+}
+/*END new works*/
+
+/*new artists*/
+.artists_head{
+    font-size: 3em;
+    margin:  30px 0 30px 50px;
+}
+.artists_head+p{
+    margin-top: 45px;
+    margin-right: 7%;
+}
+.artists{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+.artists div {
+    clear: none;
+    float: left;
+    width: 32%;
+}
+.artists>div:nth-child(2) {
+    margin: 0 2% 0 2%;
+}
+.artists div div{
+    height: 70px;
+}
+.artists div h2{
+    font-size: 2.4em;
+    padding-top: 12px;
+}
+.artists div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+.artists div:nth-child(1) img{
+    margin-top: 0px;
+}
+
+/*END new artists*/
+/*******END HOMEPAGE*******/
+    
+/*******ARCHIVE ARTISTS*******/
+/*gallery*/
+#artists .artists>div:nth-child(4){
+    margin-top: 50px;
+}
+#artists .artists>div:nth-child(5){
+    margin: 50px 2% 0 2%;
+}
+#artists .artists>div:nth-child(6){
+    margin-top: 50px;
+}
+/*pagination*/
+.pagination{
+    margin: 50px auto 50px auto;
+}
+.pagination ul li{
+    font-size: 2em;
+}
+/*******END ARCHIVE ARTISTS*******/
+    
+/*******SINGLE ARTISTS*******/
+/*breadcrumbs*/
+.breadcrumbs{
+    margin: 10px 0 70px 50px;
+}
+/*illustration*/
+.illustration{
+    float: right;
+    width: 30%;
+    margin: 70px 10% 40px 0;
+}
+/*text*/
+.text_single{
+    width: 40%;
+    margin: 0 0 0 50px;
+}
+#single_artists .text_single h1{
+    margin: 0 0 25px 0;
+}
+#single_artists .text_single p:nth-child(3){
+    margin: 40px 0 40px 0;
+    width: 250px;
+}
+
+#single_artists .text_single p:nth-child(4){
+    margin: 40px 0 40px 0;
+}
+/*******END SINGLE ARTISTS*******/
+    
+/*******WORKS ARCHIVE*******/
+#filter{
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+/*works*/
+#works .works>div:nth-child(4){
+    margin-top: 50px;
+}
+#works .works>div:nth-child(5){
+    margin: 50px 2% 0 2%;
+}
+#works .works>div:nth-child(6){
+    margin-top: 50px;
+}
+/*filter toggle list*/
+#works .filter_toggle{
+    top: 220px;
+    padding: 0px 0px 0px 5%;
+}
+/* SEARCH & FILTER PLUGIN */
+.searchandfilter .sf-field-taxonomy-artists{
+    width: 50%;
+    float: left;
+}
+.searchandfilter .sf-field-taxonomy-artists ul li{
+    display: inline-block;
+    width: 50%;
+}
+.sf-field-taxonomy-cities>ul{
+    width: 45%;
+    overflow: hidden;
+} 
+.searchandfilter .sf-field-taxonomy-cities>ul>li{
+    display: inline-block;
+    width: 50%;
+}
+.searchandfilter .sf-field-taxonomy-cities .children li{
+    display: block;
+    clear: both;
+    padding-bottom: 10px;
+}
+.searchandfilter .sf-field-taxonomy-cities ul li:nth-child(1){
+    float: left;
+}
+.searchandfilter ul li ul li ul{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.searchandfilter input[type=submit]{
+    clear: both;
+    margin: 10px 600px 20px 0;
+}
+/* END SEARCH & FILTER PLUGIN */
+/*******END WORKS ARCHIVE*******/
+    
+/*******SINGLE WORKS*******/
+#single_works .text_content h1{
+    margin: 0;
+}
+#single_works .text_content h2{
+    font-size: 2em;
+    margin: 30px 0 10px 0;
+}
+#single_works .text_content p:nth-last-child(2){
+    margin-top: 30px;
+}
+#single_works .text_content p:nth-child(3){
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+#single_works .text_content{
+    position: absolute;
+    top: 240px;
+    width: 30%;
+    margin: 0 0 0 70px;
+}
+/* button */
+#single_works .text_content button{
+    margin: 30px auto 40px auto;
+    position: absolute;
+    width: 200px;
+    height: 45px;
+}
+#single_works  .artists_back{
+        clear: both;
+        display: inline-block;
+}
+    .artists_back{
+        margin-top: 80px;
+    }
+/* comments */
+#single_works .comments h2{
+    font-size: 3em;
+    width: 90%;
+    margin: 40px auto 40px auto;
+}
+   
+#single_works .comments .comments-list{
+    width: 90%;
+}
+/* respond */
+#single_works  #respond{
+    width: 90%;
+    padding-top: 50px;
+}
+#single_works  #respond .form-submit input{
+    margin: 10px 0 0 0;
+}
+/* END respond */
+/* END comments */
+/*******END SINGLE WORKS*******/
+    
+/*******MAPS ARCHIVE*******/
+#maps .artists>div {
+    width: 49%;
+}
+#maps .artists>div:nth-child(2) {
+    margin: 0 0 0 2%;
+}
+/*******END MAPS ARCHIVE*******/
+    
+/*******SINGLE MAPS*******/
+#single_maps h1{
+    font-size: 3.5em;
+    width: 90%;
+    margin: 40px auto 40px auto;
+}
+.wpgmza_map{
+    height: 400px!important;
+    margin-top: -25px;
+}
+#single_maps ul li{
+    width: 25%;
+}
+.wpgmza_filter_container{
+    width: 90%;
+    margin-left: 5%;
+}
+/*******END SINGLE MAPS*******/
+    
+/*******FOOTER*******/
+footer{
+    font-size: 1.2em;
+}
+footer ul{
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 20px 0 0 5%;
+    border: 0px;
+}
+footer ul li{
+    margin: 12px 50px 12px 0;
+}
+footer p:nth-child(3){
+    float: right;
+    width: 150px;
+    margin: 22px 5% 0 0;
+    padding: 0;
+    border-bottom: 0px solid #FFF;
+}
+footer .fa{
+    margin-left: 20px;
+}
+footer p:nth-child(4){
+    display: block;
+    clear: both;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #FFF;
+}
+/*architectural_squares*/
+footer .squares div:nth-child(1){
+    width: 20px;
+    height: 10px;
+    left: 50px;
+    top: -10px;
+}
+footer .squares div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    top: -20px;
+}
+footer .squares div:nth-child(3){
+    width: 20px;
+    height: 15px;
+    left: 90px;
+    top: -15px;
+}
+footer .squares div:nth-child(4){
+    width: 20px;
+    height: 10px;
+    left: 110px;
+    top: -10px;
+}
+#maps footer{
+    margin-top: 60px;
+}
+/*******END FOOTER*******/
+
+/******* 404 *******/
+#error{
+    width: 90%;
+    margin: 0 auto;
+}
+#error .text{
+    width: 40%;
+    float: left;
+}
+#error h1{
+    margin-top: 0px;
+}
+#error img{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 70px auto;
+}
+#error h2{
+    font-size: 2em;
+    margin-top: 30px;
+}
+#error p{
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin-top: 20px;
+}
+/******* END 404 *******/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*min 1101*/
+@media screen and (min-width: 1101px){
+    
+/*******NAVIGATION*******/
+nav>div{
+    height: 140px;
+}
+/*logo*/
+nav  a>img{
+    left: 100px;
+    width: 120px;
+}
+/*architectural_squares*/
+.squares div:nth-child(1){
+    width: 20px;
+    height: 10px;
+    left: 100px;
+}
+.squares div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 120px;
+}
+.squares div:nth-child(3){
+    width: 20px;
+    height: 15px;
+    left: 140px;
+}
+.squares div:nth-child(4){
+    width: 20px;
+    height: 10px;
+    left: 170px;
+}
+/*END architectural_squares*/
+.nav_background{
+    height: 50px;
+}
+/*hamburger*/
+.hamburger{
+    display: none;
+}
+/*search box*/
+.box{
+    display: block;
+}
+/* navigation list */
+nav ul{
+    display: block;
+    top: 0px;
+    height: 0px;
+    padding-left: 230px;
+    background-color: transparent;
+}
+nav li{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    display: inline-block;
+    float: left;
+    margin: 17px 0 0 80px;
+} 
+.current-menu-item a:link span, .current-menu-item a:visited span {
+    font-weight: bold;
+    color: #384654;
+    opacity: 1;
+    width: 100%;
+    height: 150px;
+    background-color: #FFF;
+}  
+nav li a span {
+    padding: 15px;
+    color: #FFF;
+} 
+nav li a span:hover, nav li a span:active, nav li a span:focus{
+    opacity: 1;
+    color: #384654;
+    background-color: #FFF;
+}
+nav li a:hover, nav li a:active, nav li a:focus{
+    opacity: 1;
+}  
+/* END navigation list */
+/*******END NAVIGATION*******/
+    
+/*******HOMEPAGE*******/
+/*main*/
+/*main heading*/
+.heading{
+    width: 400px;
+    margin: 0 0 70px 100px;
+}
+h1{
+    font-size: 7em;
+    line-height: 0.7em;
+    margin-top: 150px;
+}
+h1 span{
+    font-size:0.5em;
+}
+/*about*/
+.about{
+    position: relative;
+}
+.about h2{
+    font-size: 3em;
+    width: 40%;
+    margin: 0 0 0 100px;
+    padding-top: 10px;
+}
+.about p{
+    width: 40%;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 0 0 100px ;
+    padding-top: 40px;
+}
+/*button*/
+.about button{
+    font-size: 18px;
+    width: 40%;
+    margin: 60px 0 0 100px;
+}
+/*stik image*/
+.about img{
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    transform:translate(0,-50%);
+    left: 60%;
+    margin: 0px 0px 0 0;
+    }
+/*END about*/
+
+/*new works*/
+.works_head{
+    font-size: 3em;
+    margin: 50px 0 50px 5%;
+}
+.works_head+p{
+    float: right;
+    margin-top: 60px;
+    margin-right: 8%;
+}
+.works{
+    overflow: hidden;
+    width: 90%; 
+    margin: 0 auto;
+}
+.works div {
+    float: left;
+    clear: none;
+    width: 32%;
+}
+.works>div:nth-child(2) {
+    margin: 0 2% 0 2%;
+}
+.works div div{
+    height: 90px;
+}
+.works h2{
+    font-size: 3em;
+    padding-top: 15px;
+}
+.works h3{
+    font-size: 2em;
+    padding-top: 5px;
+}
+.works a img{
+    margin-top: 0px;
+}
+/*END new works*/
+
+/*new artists*/
+.artists_head{
+    font-size: 3em;
+    margin:  50px 0 50px 5%;
+}
+.artists_head+p{
+    margin-top: 60px;
+    margin-right: 7%;
+}
+.artists{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+.artists div {
+    float: left;
+    clear: none;
+    width: 32%;
+}
+.artists_back{
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+#homepage .artists_back{
+    padding-bottom: 100px;
+}
+.artists>div:nth-child(2) {
+    margin: 0 2% 0 2%;
+}
+.artists div div{
+    height: 90px;
+}
+.artists div h2{
+    font-size: 3em;
+    padding-top: 15px;
+}
+.artists div img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+.artists div:nth-child(1) img{
+    margin-top: 0px;
+}
+
+/*END new artists*/
+/*******END HOMEPAGE*******/
+    
+/*******ARCHIVE ARTISTS*******/
+.artists_head{
+    margin-left: 5%;
+}
+/*gallery*/
+#artists .artists>div:nth-child(4){
+    margin-top: 60px;
+}
+#artists .artists>div:nth-child(5){
+    margin: 60px 2% 0 2%;
+}
+#artists .artists>div:nth-child(6){
+    margin-top: 60px;
+}
+/*pagination*/
+.pagination{
+    margin: 60px auto 60px auto;
+}
+.pagination ul li{
+    font-size: 2em;
+}
+/*******END ARCHIVE ARTISTS*******/
+    
+/*******SINGLE ARTISTS*******/
+/*breadcrumbs*/
+.breadcrumbs{
+    margin: 10px 0 70px 100px;
+}
+/*illustration*/
+.illustration{
+    float: right;
+    width: 25%;
+    margin: 30px 12% 50px 0;
+}
+/*text*/
+.text_single{
+    min-height: auto;
+    width: 40%;
+    margin: 0 0 0 7%;
+}
+#single_artists .text_single h1{
+    font-size: 3em;
+    margin: 0 0 25px 0;
+}
+#single_artists .text_single p:nth-child(3){
+    margin: 40px 0 50px 0;
+    width: 250px;
+}
+#single_artists .text_single p:nth-child(4){
+    margin: 40px 0 50px 0;
+}
+#single_artists .artists_back{
+    padding-bottom: 100px;
+}
+/*******END SINGLE ARTISTS*******/
+    
+/*******UPLOAD IMAGE PAGE*******/
+tr{
+    margin-left: 100px;
+    font-size: 2.5em;
+}
+#upload-image p    {
+    
+    width: 80%;
+    display: block;
+    margin: 0 0 0 100px;
+    margin-top: 40px;
+}
+/*******END UPLOAD IMAGE PAGE*******/
+    
+/*******WORKS ARCHIVE*******/
+#filter{
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+/*works*/
+#works .works>div:nth-child(4){
+    margin-top: 50px;
+}
+#works .works>div:nth-child(5){
+    margin: 50px 2% 0 2%;
+}
+#works .works>div:nth-child(6){
+    margin-top: 50px;
+}
+/*filter toggle list*/
+#works .filter_toggle{
+    top: 250px;
+    padding: 0px 5% 0px 5%;
+}
+/* SEARCH & FILTER PLUGIN */
+.searchandfilter .sf-field-taxonomy-artists{
+    width: 60%;
+    float: left;
+}
+.searchandfilter .sf-field-taxonomy-artists ul li{
+    display: inline-block;
+    width: 33.3%;
+}
+.sf-field-taxonomy-cities>ul{
+    width: 40%;
+    overflow: hidden;
+} 
+.searchandfilter .sf-field-taxonomy-cities>ul>li{
+    display: inline-block;
+    width: 50%;
+}
+ .searchandfilter .sf-field-taxonomy-cities .children li{
+    display: block;
+    clear: both;
+    padding-bottom: 10px;
+}         
+.searchandfilter .sf-field-taxonomy-cities ul li:nth-child(1){
+    float: left;
+}
+.searchandfilter ul li ul li ul{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.searchandfilter input[type=submit]{
+    clear: both;
+    margin: 10px 400px 30px 0;
+}
+/* END SEARCH & FILTER PLUGIN */
+/*******END WORKS ARCHIVE*******/
+    
+/*******SINGLE WORKS*******/
+#single_works .text_content h1{
+    margin: 0;
+    font-size: 5em;  
+    line-height: 1.1em;
+} 
+#single_works .text_content h2{
+    font-size: 2.5em;
+    margin: 40px 0 10px 0;
+}
+#single_works .text_content p:nth-child(5){
+    margin-top: 35px;
+}
+#single_works .text_content p:nth-child(3){
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+#single_works .text_content p:nth-child(4) a{
+    line-height: 1.4em;
+}
+#single_works .text_content{
+    position: absolute;
+    width: 30%;
+    top: 270px;
+    margin: 0 0 0 7%;
+    padding-right: 40px;
+}
+/* button */
+#single_works .text_content button{
+    position: absolute;
+    margin: 40px auto 0 auto;
+    width: 230px;
+    height: 60px;
+}
+#single_works  .artists_back{
+    clear: both;
+    display: inline-block;
+    margin-top: 50px;
+}
+/* comments */
+#single_works .comments h2{
+    font-size: 3em;
+    margin: 50px 0 50px 5%;
+}
+#single_works .comments .comments-list{
+    float: right;
+    width: 50%;
+    margin: 47px 5% 100px 5%;
+    float: right;
+}
+/* respond */
+#single_works  #respond{
+    clear: inherit;
+    width: 40%;
+    margin: 0 0 100px 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+}
+#single_works  #respond .form-submit input{
+    margin: 10px 0 0 0;
+}
+#single_works  #respond textarea{
+    height: 200px;
+}
+/* END respond */
+/* END comments */
+/*******END SINGLE WORKS*******/ 
+    
+/*******MAPS ARCHIVE*******/
+#maps .artists>div {
+    width: 49%;
+}
+#maps .artists>div:nth-child(2) {
+    margin: 0 0 0 2%;
+}
+#maps footer{
+    margin-top: 100px;
+}
+#maps .artists_head {
+    margin-left: 5%;
+    }
+/*******END MAPS ARCHIVE*******/
+    
+/*******SINGLE MAPS*******/
+#single_maps h1{
+    font-size: 5em;
+    width: 90%;
+    margin: 50px auto 50px auto;
+}
+.wpgmza_map{
+    height: 500px!important;
+     margin-top: -25px;
+}
+#single_maps ul li{
+    width: 20%;
+}
+.wpgmza_filter_container{
+    width: 90%;
+    margin-left: 5%;
+}
+/*******END SINGLE MAPS*******/
+/*******FOOTER*******/
+footer{
+    clear: both;
+    overflow:visible;
+    font-size: 1.2em;
+}
+footer ul{
+    display: block;
+    float: left;
+    width: 38%;
+    margin: 30px 0 0 5%;
+    border: 0px;
+}
+footer ul li{
+    margin: 12px 50px 12px 0;
+}
+footer p:nth-child(3){
+    float: right;
+    width: 150px;
+    margin: 30px 5% 0 0;
+    padding: 0;
+    border-bottom: 0px solid #FFF;
+}
+footer .fa{
+    margin-left: 20px;
+}
+footer p:nth-child(4){
+    display: block;
+    clear: both;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #FFF;
+}
+/*architectural_squares*/
+footer .squares div:nth-child(1){
+    width: 20px;
+    height: 10px;
+    left: 100px;
+    top: -10px;
+}
+footer .squares div:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 120px;
+    top: -20px;
+}
+footer .squares div:nth-child(3){
+    width: 20px;
+    height: 15px;
+    left: 140px;
+    top: -15px;
+}
+footer .squares div:nth-child(4){
+    width: 20px;
+    height: 10px;
+    left: 160px;
+    top: -10px;
+}
+/*END architectural_squares*/
+/*******END FOOTER*******/
+/******* 404 *******/
+#error{
+    width: 90%;
+    margin: 0 auto;
+}
+#error .text{
+    width: 40%;
+    float: left;
+}
+ #error h1{
+    margin-top: 0px;
+}
+#error img{
+    display: block;
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    margin: 70px auto;
+}
+#error h2{
+    font-size: 2em;
+    margin-top: 30px;
+}
+#error p{
+    font-size: 1.6em;
+    line-height: 1.4em;
+    margin-top: 20px;
+}
+/******* END 404 *******/
+}
